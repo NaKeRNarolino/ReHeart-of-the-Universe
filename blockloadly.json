@@ -1,0 +1,42 @@
+{
+    "name": "Heart of the Universe",
+    "description": "HotU",
+    "author": "NaKeR",
+    "versions": [
+        {
+            "name": "0.1.0-alpha",
+            "mcVersion": ["1.21.60"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.0-alpha/Heart-Of-The-Universe.mcaddon"
+        },
+        {
+            "name": "0.1.1-alpha",
+            "mcVersion": ["1.21.60"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.1-alpha/Heart.Of.The.Universe.0-1-1-alpha.mcaddon"
+        },
+        {
+            "name": "0.1.2-alpha",
+            "mcVersion": ["1.21.60"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.2-alpha/HU-0-1-2-alpha.mcaddon"
+        }.
+        {
+            "name": "0.1.2-alpha",
+            "mcVersion": ["1.21.60"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.2-alpha/HU-0-1-2-alpha.mcaddon"
+        }.
+        {
+            "name": "0.1.5-alpha",
+            "mcVersion": ["1.21.70"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.5-alpha/HU-0-1-5-alpha.mcaddon"
+        }.
+        {
+            "name": "0.1.6-alpha",
+            "mcVersion": ["1.21.80"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.6-alpha/HU-0-1-6-alpha.mcaddon"
+        }.
+        {
+            "name": "0.1.7-alpha",
+            "mcVersion": ["1.21.80"],
+            "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.7-alpha/HU-0-1-7-alpha.mcaddon"
+        }.
+    ]
+}
