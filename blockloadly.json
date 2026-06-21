@@ -17,26 +17,26 @@
             "name": "0.1.2-alpha",
             "mcVersion": ["1.21.60"],
             "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.2-alpha/HU-0-1-2-alpha.mcaddon"
-        }.
+        },
         {
             "name": "0.1.2-alpha",
             "mcVersion": ["1.21.60"],
             "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.2-alpha/HU-0-1-2-alpha.mcaddon"
-        }.
+        },
         {
             "name": "0.1.5-alpha",
             "mcVersion": ["1.21.70"],
             "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.5-alpha/HU-0-1-5-alpha.mcaddon"
-        }.
+        },
         {
             "name": "0.1.6-alpha",
             "mcVersion": ["1.21.80"],
             "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.6-alpha/HU-0-1-6-alpha.mcaddon"
-        }.
+        },
         {
             "name": "0.1.7-alpha",
             "mcVersion": ["1.21.80"],
             "downloadUrl": "https://github.com/NaKeRNarolino/Heart-Of-the-Universe/releases/download/0.1.7-alpha/HU-0-1-7-alpha.mcaddon"
-        }.
+        }
     ]
 }
