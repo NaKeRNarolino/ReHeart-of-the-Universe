@@ -1,0 +1,70 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.ic.long_sword_animations": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "idle": "query.property('naker_hotu:holding_sword') == 'LONG' && !query.is_moving"
+            }
+          ],
+          "blend_transition": 0.3
+        },
+        "idle": {
+          "animations": ["hold_idle"],
+          "transitions": [
+            {
+              "default": "query.property('naker_hotu:holding_sword') == 'NONE' || query.is_moving"
+            },
+            {
+              "attack_1": "query.property('naker_hotu:attack_state') == 1"
+            },
+            {
+              "attack_2": "query.property('naker_hotu:attack_state') == 2"
+            },
+            {
+              "attack_3": "query.property('naker_hotu:attack_state') == 3"
+            },
+            {
+              "attack_3": "query.property('naker_hotu:attack_state') == 4"
+            }
+          ],
+          "blend_transition": 0.3
+        },
+        "attack_1": {
+          "animations": ["long_sword_attack_1"],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attack_2": {
+          "animations": ["long_sword_attack_2"],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attack_3": {
+          "animations": ["long_sword_attack_3"],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "attack_4": {
+          "animations": ["long_sword_attack_4"],
+          "transitions": [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

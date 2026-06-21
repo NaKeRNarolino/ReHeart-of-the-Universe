@@ -1,0 +1,10 @@
+tile.naker_hotu:guide_skint.name=Wayfinding Skint
+naker_hotu:item_group=Heart Of The Universe
+item.naker_hotu:long_rusty_sword=Long Rusty Sword
+item.naker_hotu:health_vial_3=Vial of life force §7[3/3]
+item.naker_hotu:health_vial_0=Vial of life force §7[0/3]
+item.naker_hotu:health_vial_2=Vial of life force §7[2/3]
+naker_hotu.ui.experimental_ddui=Experimental DDUI
+naker_hotu.ui.experimental_ddui_desc=Enables experimental DDUI for screens instead of the classic JSON-UI. This refers to old screens. Most new screens will use DDUI anyways.
+item.naker_hotu:skint_magic_lens=Skint Lens
+item.naker_hotu:skint_card=Skint Card

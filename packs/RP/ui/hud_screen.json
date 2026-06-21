@@ -1,0 +1,213 @@
+{
+  "namespace": "hud",
+
+  "root_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "sparks@sparks_display.sparks": {
+              "$amount": "#x"
+            }
+          },
+          {
+            "health@hotu_bars.health_bar": {
+              "$fill_texture": "textures/gui/nakern_hotu/bars/health",
+              "$icon_texture": "textures/gui/nakern_hotu/bars/heart",
+              "anchor_from": "bottom_middle",
+              "anchor_to": "bottom_middle",
+              "offset": [0, "-35px"],
+              "bindings": [
+                {
+                  "binding_name": "#show_survival_ui",
+                  "binding_name_override": "#visible"
+                }
+              ]
+            }
+          },
+          {
+            "stamina@hotu_bars.stamina_bar": {
+              "$fill_texture": "textures/gui/nakern_hotu/bars/stamina_fill",
+              "$icon_texture": "textures/gui/nakern_hotu/bars/stamina",
+              "anchor_from": "bottom_middle",
+              "anchor_to": "bottom_middle",
+              "offset": [0, "-45px"],
+              "bindings": [
+                {
+                  "binding_name": "#show_survival_ui",
+                  "binding_name_override": "#visible"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "hud_title_text": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "offset": [0, -19],
+    "layer": 1,
+    "alpha": "@hud.anim_title_text_alpha_in",
+    "propagate_alpha": true,
+    "controls": []
+  },
+
+  "heart_renderer": {
+    "type": "panel",
+    "size": [1, 1],
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#show_survival_ui",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "hunger_renderer": {
+    "type": "panel",
+    "size": [1, 1],
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#show_survival_ui",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "exp_progress_bar_and_hotbar": {
+    "type": "panel",
+    "size": ["100%c", 31],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": "$xp_control_offset",
+    "controls": [
+      {
+        "resizing_xp_bar_with_hotbar": {
+          "type": "panel",
+          "size": ["100%c", 5],
+          "controls": [
+            {
+              "empty_progress_bar@empty_progress_bar": {
+                "size": ["100%c", 5],
+                "layer": 1,
+                "controls": [
+                  {
+                    "full_progress_bar@full_progress_bar": {
+                      "size": ["100%c + 10px", 5],
+                      "layer": 2,
+                      "controls": [
+                        {
+                          "progress_bar_nub@progress_bar_nub": {
+                            "size": ["100%c - 10px", 5],
+                            "max_size": [190, 5],
+                            "layer": 3,
+                            "controls": [
+                              {
+                                "horse_jump_rend@horse_jump_renderer": {
+                                  "anchor_from": "bottom_middle",
+                                  "anchor_to": "bottom_middle",
+                                  "size": ["100%c", 5],
+                                  "layer": 7,
+                                  "controls": [
+                                    {
+                                      "dash_rend@dash_renderer": {
+                                        "anchor_from": "bottom_middle",
+                                        "anchor_to": "bottom_middle",
+                                        "size": ["100%c", 5],
+                                        "layer": 7,
+                                        "controls": [
+                                          {
+                                            "hotbar@hotbar_chooser": {
+                                              "offset": [4, 16]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "progress_text_label@progress_text_label": {
+                "offset": ["-100px", "22.5px"],
+                "layer": 7
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#hotbar_with_xp_bar",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+
+      {
+        "resizing_hotbar_no_xp_bar": {
+          "type": "panel",
+          "size": ["100%c", 5],
+          "controls": [
+            {
+              "horse_jump_rend@horse_jump_renderer": {
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "size": ["100%c", 5],
+                "layer": 7,
+                "bindings": [
+                  {
+                    "binding_name": "#hotbar_no_xp_bar",
+                    "binding_name_override": "#visible"
+                  }
+                ],
+                "controls": [
+                  {
+                    "dash_rend@dash_renderer": {
+                      "anchor_from": "bottom_middle",
+                      "anchor_to": "bottom_middle",
+                      "size": ["100%c", 5],
+                      "layer": 7,
+                      "controls": [
+                        {
+                          "hotbar@hotbar_chooser": {
+                            "offset": [4, 16]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item_text_factory": {
+          "size": [100, 10],
+          "type": "factory",
+          "control_ids": {
+            "item_text": "@hud.item_name_text",
+            "jukebox_text": "@hud.jukebox_popup_text"
+          }
+        }
+      }
+    ]
+  }
+}

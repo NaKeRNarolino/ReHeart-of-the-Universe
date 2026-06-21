@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "naker_hotu:long_rusty_sword",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/items/long_rusty_sword"
+      },
+      "geometry": {
+        "default": "geometry.naker_hotu.long_sword"
+      },
+      "render_controllers": ["controller.render.default"],
+      "animations": {
+        "hold_first_person": "animation.naker_hotu.long_sword.hold_first_person",
+        "hold_third_person": "animation.naker_hotu.long_sword.hold_third_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "hold_first_person": "q.is_first_person"
+          },
+          {
+            "hold_third_person": "!q.is_first_person"
+          }
+        ]
+      }
+    }
+  }
+}

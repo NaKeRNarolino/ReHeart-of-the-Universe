@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.spark.spark.loop": {
+      "loop": true,
+      "animation_length": 0.1,
+      "bones": {
+        "bb_main": {
+          "rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)", 0]
+        }
+      },
+      "particle_effects": {
+        "0.0": {
+          "effect": "spark"
+        }
+      }
+    }
+  }
+}

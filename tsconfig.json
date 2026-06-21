@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "ignoreDeprecations": "6.0",
+        "target": "ES2020",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "outDir": "./BP/scripts",
+        "rootDir": "./packs",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true
+    },
+    "include": ["packs/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}

@@ -1,0 +1,177 @@
+{
+  "namespace": "hotu_bars",
+
+  "health_bar": {
+    "$percentage": 0,
+    "$icon_texture": "",
+    "$fill_texture": "",
+
+    "$max_w": 90,
+    "type": "panel",
+
+    "size": [96, 6],
+    "anchor_from": "center",
+    "anchor_to": "center",
+
+    "controls": [
+      {
+        "fill": {
+          "type": "panel",
+          "offset": [0, 0],
+          "size": [90, 4],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "texture": "$fill_texture",
+                "size": ["93.75%", 4]
+              }
+            }
+          ],
+          "property_bag": {
+            "#split_flag": "s:",
+            "#split_sep": ",",
+            "#size_binding_x": 0.0
+          },
+          "$one": 1.0,
+          "$hundred": 100.0,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - #split_flag)",
+              "target_property_name": "#x"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('§z' + (#hud_title_text_string - #split_flag))",
+              "target_property_name": "#x_t"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - (#split_flag + #x + #split_sep))",
+              "target_property_name": "#y"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "($one * #y)",
+              "target_property_name": "#yf"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#yf / $hundred)",
+              "target_property_name": "#size_binding_x"
+            }
+          ]
+        }
+      },
+      {
+        "bg": {
+          "type": "image",
+          "texture": "textures/gui/nakern_hotu/bars/bar",
+          "size": ["100%", "100%"],
+          "layer": 3
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "$icon_texture",
+          "size": [9, 9],
+          "layer": 3
+        }
+      }
+    ]
+  },
+
+  "stamina_bar": {
+    "$percentage": 0,
+    "$icon_texture": "",
+    "$fill_texture": "",
+
+    "$max_w": 90,
+    "type": "panel",
+
+    "size": [96, 6],
+    "anchor_from": "center",
+    "anchor_to": "center",
+
+    "controls": [
+      {
+        "fill": {
+          "type": "panel",
+          "offset": [0, 0],
+          "size": [90, 4],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "image": {
+                "type": "image",
+                "texture": "$fill_texture",
+                "size": ["93.75%", 4]
+              }
+            }
+          ],
+          "property_bag": {
+            "#split_flag": "s:",
+            "#split_sep": ",",
+            "#size_binding_x": 0.0
+          },
+          "$one": 1.0,
+          "$hundred": 100.0,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - #split_flag)",
+              "target_property_name": "#x"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('§z' + (#hud_title_text_string - #split_flag))",
+              "target_property_name": "#x_t"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - (#split_flag + #x + #split_sep))",
+              "target_property_name": "#y"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - (#split_flag + #x + #split_sep + #y + #split_sep))",
+              "target_property_name": "#z"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "((#z * $one) / $hundred)",
+              "target_property_name": "#size_binding_x"
+            }
+          ]
+        }
+      },
+      {
+        "bg": {
+          "type": "image",
+          "texture": "textures/gui/nakern_hotu/bars/bar",
+          "size": ["100%", "100%"],
+          "layer": 3
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "$icon_texture",
+          "size": [9, 9],
+          "layer": 3
+        }
+      }
+    ]
+  }
+}

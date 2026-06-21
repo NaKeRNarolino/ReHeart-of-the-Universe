@@ -1,0 +1,139 @@
+{
+  "namespace": "guide_skint",
+
+  "form": {
+    "type": "panel",
+    "$body|default": "",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "image": {
+          "type": "image",
+          "texture": "textures/gui/guide_skint_ui",
+          "size": ["100%", "100%"]
+        }
+      },
+      {
+        "name": {
+          "type": "image",
+          "texture": "textures/gui/guide_skint_ui_button",
+          "size": ["278px", "48px"],
+          "offset": ["0%", "-35%"],
+          "controls": [
+            {
+              "text": {
+                "type": "label",
+                "text": "#form_text",
+                "offset": ["0%", "-14%"],
+                "layer": 999
+              }
+            },
+            {
+              "text": {
+                "type": "label",
+                "text": "#cost",
+                "offset": ["0%", "20%"],
+                "layer": 999,
+                "bindings": [
+                  {
+                    "binding_name": "title_text"
+                  },
+                  {
+                    "binding_type": "view",
+                    "source_property_name": "(#title_text - 'naker_hotu:guide_skint_ui')",
+                    "target_property_name": "#cost"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "buttons@guide_skint.buttons": {
+          "offset": ["0%", "80%"]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "collection"
+      },
+      {
+        "binding_name": "form_text"
+      }
+    ]
+  },
+
+  "buttons": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "collection_name": "form_buttons",
+
+    "controls": [
+      {
+        "back_button@guide_skint.button": {
+          "$text": "Назад",
+          "size": ["75px", "32px"],
+          "$size": ["64px", "32px"],
+          "$collection_index": 0
+        }
+      },
+      {
+        "tp_button@guide_skint.button": {
+          "$text": "Переместиться",
+          "size": ["137px", "32px"],
+          "$size": ["128px", "32px"],
+          "$collection_index": 1
+        }
+      },
+      {
+        "forward_button@guide_skint.button": {
+          "$text": "Вперёд",
+          "size": ["75px", "32px"],
+          "$size": ["64px", "32px"],
+          "$collection_index": 2
+        }
+      }
+    ]
+  },
+
+  "button@common.button": {
+    "type": "button",
+
+    "$size|default": ["32px", "32px"],
+    "size": "$size",
+    "$text|default": "",
+    "sound_name": "random.click",
+    "sound_volume": 1.0,
+    "sound_pitch": 1.0,
+    "$collection_index|default": 0,
+    "collection_index": "$collection_index",
+
+    "$button_text_binding_type": "collection",
+    "$button_text_grid_collection_name": "form_buttons",
+    "$pressed_button_name": "button.form_button_click",
+
+    "controls": [
+      {
+        "image": {
+          "type": "image",
+          "size": "$size",
+          "texture": "textures/gui/guide_skint_ui_button"
+        }
+      },
+      {
+        "text": {
+          "type": "label",
+          "text": "$text"
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "collection_details",
+        "binding_collection_name": "form_buttons"
+      }
+    ]
+  }
+}

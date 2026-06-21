@@ -1,0 +1,30 @@
+{
+  "resource_pack_name": "Heart Of the Universe",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "naker_hotu:long_rusty_sword": {
+      "textures": "textures/items/long_rusty_sword"
+    },
+    "naker_hotu:health_vial_0": {
+      "textures": "textures/items/naker_hotu_health_vial_0.png"
+    },
+    "naker_hotu:health_vial_1": {
+      "textures": "textures/items/naker_hotu_health_vial_1.png"
+    },
+    "naker_hotu:health_vial_2": {
+      "textures": "textures/items/naker_hotu_health_vial_2.png"
+    },
+    "naker_hotu:health_vial_3": {
+      "textures": "textures/items/naker_hotu_health_vial_3.png"
+    },
+    "naker_hotu:skint_magic_lens_icon": {
+      "textures": "textures/items/skint_lens_item.png"
+    },
+    "naker_hotu:skint_card_icon": {
+      "textures": "textures/items/skint_card_uncolor_bright.tga"
+    },
+    "naker_hotu:skint_card_icon_default": {
+      "textures": "textures/items/skint_card_skint.png"
+    }
+  }
+}

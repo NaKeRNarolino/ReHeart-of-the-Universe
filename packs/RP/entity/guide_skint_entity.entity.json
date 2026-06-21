@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "naker_hotu:guide_skint_entity",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/guide_skint"
+      },
+      "geometry": {
+        "default": "geometry.naker_hotu.guide_skint_active"
+      },
+      "animations": {
+        "spawn": "animation.naker_hotu.guide_skint_active.spawn"
+      },
+      "particle_effects": {
+        "guide_skint_sparkles": "naker_hotu:guide_skint_sparkles"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "spawn": "(1.0)"
+          }
+        ]
+      },
+      "render_controllers": ["controller.render.guide_skint"]
+    }
+  }
+}

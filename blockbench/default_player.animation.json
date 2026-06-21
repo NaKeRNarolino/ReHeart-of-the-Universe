@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.magic_lenses.first_person": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [180, 0, 0],
+					"position": [0, 39, -1]
+				}
+			}
+		},
+		"animation.magic_lenses.third_person": {
+			"animation_length": 0.75,
+			"bones": {
+				"bone": {
+					"rotation": [180, 0, 0],
+					"position": {
+						"0.0": [0, 27, -1],
+						"0.75": [0, 30, -1]
+					}
+				}
+			}
+		},
+		"animation.magic_lenses.new2": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [0, 0, 180],
+					"position": [-2, 0, 0]
+				}
+			}
+		}
+	}
+}

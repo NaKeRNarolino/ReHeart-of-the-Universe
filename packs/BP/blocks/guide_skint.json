@@ -1,0 +1,46 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "naker_hotu:guide_skint"
+    },
+    "components": {
+      "naker_hotu:guide_skint": {},
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "naker_hotu:empty",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:geometry": "geometry.naker_hotu.empty",
+      "minecraft:light_emission": 10,
+      "minecraft:item_visual": {
+        "geometry": "geometry.naker_hotu.guide_skint_active",
+        "material_instances": {
+          "*": {
+            "texture": "naker_hotu:guide_skint",
+            "render_method": "alpha_test"
+          }
+        }
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 10
+      },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "can_contain_liquid": true,
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction",
+            "stops_liquid_flowing_from_direction": []
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:tick": {
+        "looping": true,
+        "interval_range": [0, 0]
+      }
+    }
+  }
+}

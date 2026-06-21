@@ -1,0 +1,11 @@
+tile.naker_hotu:guide_skint.name=Путеводный Скинт
+naker_hotu:item_group=Сердце Вселенной
+item.naker_hotu:long_rusty_sword=Ржавый Длинный Меч
+item.naker_hotu:health_vial_3=Фиал жизненной силы §7[3/3]
+item.naker_hotu:health_vial_1=Фиал жизненной силы §7[1/3]
+item.naker_hotu:health_vial_0=Фиал жизненной силы §7[0/3]
+item.naker_hotu:health_vial_2=Фиал жизненной силы §7[2/3]
+naker_hotu.ui.experimental_ddui=Экспериментальный DDUI
+naker_hotu.ui.experimental_ddui_desc=Включает экспериментальный DDUI для экранов заместо классического JSON-UI. Это относится к старым экранам, новые экраны будут преимущественно на DDUI в любом случае.
+item.naker_hotu:skint_magic_lens=Скинтовая Линза
+item.naker_hotu:skint_card=Скинтовая Карта

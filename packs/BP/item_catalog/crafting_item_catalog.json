@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "naker_hotu:guide_skint",
+              "name": "naker_hotu:item_group"
+            },
+            "items": [
+              "naker_hotu:guide_skint",
+              "naker_hotu:long_rusty_sword",
+              "naker_hotu:health_vial_0",
+              "naker_hotu:health_vial_1",
+              "naker_hotu:health_vial_2",
+              "naker_hotu:health_vial_3"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "naker_hotu:abandoned_guide_skint_pool"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "naker_hotu/abndnd_guide_skint",
+          "processors": "naker_hotu:stone_brick_replacement"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "naker_hotu/a_guide_skint_dsrt",
+          "processors": "naker_hotu:stone_brick_replacement"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

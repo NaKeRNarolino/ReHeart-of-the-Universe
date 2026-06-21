@@ -1,0 +1,13 @@
+{
+  "format_version": "1.26.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "naker_hotu:health_vial_2"
+    },
+    "components": {
+      "minecraft:icon": "naker_hotu:health_vial_2",
+      "minecraft:max_stack_size": 1,
+      "naker_hotu:health_vial": {}
+    }
+  }
+}

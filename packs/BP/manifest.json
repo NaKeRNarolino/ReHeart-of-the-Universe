@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": ["NaKeR"],
+    "generated_with": {}
+  },
+  "header": {
+    "name": "Heart Of The Universe (re) BP",
+    "description": "Heart Of The Universe",
+    "min_engine_version": [1, 21, 60],
+    "uuid": "a243cece-62ef-4be4-817c-ef53bfba2a48",
+    "version": [1, 2, 0]
+  },
+  "modules": [
+    {
+      "description": "behavior",
+      "type": "script",
+      "uuid": "1af66621-0ce8-417f-a0d4-88b91be3c0f9",
+      "version": [1, 0, 0],
+      "language": "javascript",
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "beta"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "beta"
+    },
+    {
+      "uuid": "9982d15f-d735-4119-d89c-f98c5faac88a",
+      "version": [1, 2, 0]
+    }
+  ],
+  "subpacks": []
+}

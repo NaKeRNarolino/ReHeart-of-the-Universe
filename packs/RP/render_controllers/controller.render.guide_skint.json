@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "render_controllers": {
+    "controller.render.guide_skint": {
+      "ignore_lighting": true,
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  }
+}

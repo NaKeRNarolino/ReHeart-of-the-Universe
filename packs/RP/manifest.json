@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": ["NaKeR"],
+    "generated_with": {}
+  },
+  "header": {
+    "name": "Heart Of The Universe (re) RP",
+    "description": "Heart Of The Universe",
+    "min_engine_version": [1, 21, 60],
+    "uuid": "9982d15f-d735-4119-d89c-f98c5faac88a",
+    "version": [1, 2, 0]
+  },
+  "modules": [
+    {
+      "description": "resource",
+      "type": "resources",
+      "uuid": "3115eb4a-588e-4c4d-a099-788308fd4984",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a243cece-62ef-4be4-817c-ef53bfba2a48",
+      "version": [1, 2, 0]
+    }
+  ],
+  "subpacks": []
+}

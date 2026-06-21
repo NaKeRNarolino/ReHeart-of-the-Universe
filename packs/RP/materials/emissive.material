@@ -1,0 +1,6 @@
+{
+    "naker_hotu:entity_alphablend_emissive": {
+        "+defines": ["USE_EMISSIVE"],
+        "+states": ["Blending", "DisableCulling", "DisableDepthWrite", "DisableAlphaWrite"]
+    }
+}

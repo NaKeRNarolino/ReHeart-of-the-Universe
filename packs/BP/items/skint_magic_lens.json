@@ -1,0 +1,22 @@
+{
+  "format_version": "1.26.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "naker_hotu:skint_magic_lens",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "naker_hotu:skint_magic_lens_icon",
+      "minecraft:durability": {
+        "max_durability": 256
+      },
+      "minecraft:cooldown": {
+        "category": "skint_lens",
+        "duration": 0.2
+      },
+      "naker_hotu:skint_lens_component": {}
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.7.json",
+  "author": "NaKeR N.",
+  "name": "Heart of the Universe",
+  "packs": {
+    "behaviorPack": "./packs/BP",
+    "resourcePack": "./packs/RP"
+  },
+  "regolith": {
+    "dataPath": "./packs/data",
+    "filterDefinitions": {
+      "esbuild": {
+        "runWith": "shell",
+        "command": "node ../../esbuild.js"
+      },
+      "typescript": {
+        "runWith": "shell",
+        "command": "npx tsc -p ../../tsconfig.json"
+      }
+    },
+    "formatVersion": "1.7.0",
+    "profiles": {
+      "default": {
+        "export": {
+          "build": "standard",
+          "readOnly": false,
+          "target": "development"
+        },
+        "filters": [
+          {
+            "filter": "typescript"
+          },
+          {
+            "filter": "esbuild"
+          }
+        ]
+      },
+      "build": {
+        "export": {
+          "build": "standard",
+          "readOnly": false,
+          "target": "local"
+        },
+        "filters": [
+          {
+            "filter": "typescript"
+          },
+          {
+            "filter": "esbuild"
+          }
+        ]
+      }
+    }
+  }
+}

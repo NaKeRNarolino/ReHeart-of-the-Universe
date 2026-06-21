@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "naker_hotu:spark",
+      "materials": {
+        "default": "entity_beam_additive"
+      },
+      "textures": {
+        "default": "textures/entity/spark"
+      },
+      "geometry": {
+        "default": "geometry.spark.spark"
+      },
+      "animations": {
+        "loop": "animation.spark.spark.loop"
+      },
+      "particle_effects": {
+        "spark": "spark:spark"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "loop": "(1.0)"
+          }
+        ]
+      },
+      "spawn_egg": {
+        "base_color": "#288483",
+        "overlay_color": "#2B7135"
+      },
+      "render_controllers": ["controller.render.spark"]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "naker_hotu:abandoned_guide_skint_s"
+    },
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      }
+    ],
+    "step": "surface_structures",
+    "terrain_adaptation": "none",
+    "start_pool": "naker_hotu:abandoned_guide_skint_pool",
+    "max_depth": 12,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 0
+      }
+    },
+    "heightmap_projection": "world_surface"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:biome": {
+    "description": {
+      "identifier": "naker_hotu:corrupted_lands"
+    },
+    "components": {
+      "minecraft:climate": {
+        "downfall": 0.4,
+        "snow_accumulation": [0.0, 0.125],
+        "temperature": 0.8
+      },
+      "minecraft:overworld_height": {
+        "noise_type": "extreme"
+      },
+      "minecraft:replace_biomes": {
+        "replacements": [
+          {
+            "dimension": "minecraft:overworld",
+            "amount": 0.5,
+            "noise_frequency_scale": 0.1,
+            "targets": ["minecraft:plains"]
+          }
+        ]
+      },
+      "minecraft:surface_builder": {
+        "builder": {
+          "type": "minecraft:overworld",
+          "sea_floor_depth": 7,
+          "sea_floor_material": "minecraft:gravel",
+          "foundation_material": "minecraft:basalt",
+          "mid_material": "minecraft:obsidian",
+          "top_material": "minecraft:polished_blackstone_bricks",
+          "sea_material": "minecraft:water"
+        }
+      },
+      "minecraft:tags": {
+        "tags": ["monster", "overworld", "plains", "hotu_corrupted_lands"]
+      }
+    }
+  }
+}

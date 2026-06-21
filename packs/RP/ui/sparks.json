@@ -1,0 +1,61 @@
+{
+  "namespace": "sparks_display",
+
+  "sparks": {
+    "type": "panel",
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "size": ["55px", "20px"],
+    "$amount": "#x_t",
+    "controls": [
+      {
+        "sparks": {
+          "type": "label",
+          "text": "#x_t",
+          "layer": 2,
+          "offset": ["4px", "-50px"],
+          "property_bag": {
+            "#split_sep": ",",
+            "#split_flag": "s:"
+          },
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - #split_flag)",
+              "target_property_name": "#x"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "('§z' + (#hud_title_text_string - #split_flag))",
+              "target_property_name": "#x_t"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#hud_title_text_string - (#split_flag + #x + #split_sep))",
+              "target_property_name": "#y"
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "image",
+          "texture": "textures/gui/spark_panel",
+          "size": ["55px", "20px"],
+          "offset": ["0px", "-50px"]
+        }
+      },
+      {
+        "icon": {
+          "type": "image",
+          "texture": "textures/gui/spark",
+          "size": ["16px", "16px"],
+          "offset": ["-16px", "-50px"]
+        }
+      }
+    ]
+  }
+}

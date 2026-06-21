@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:single_block_feature": {
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "description": {
+      "identifier": "naker_hotu:corrupted_grass_feature"
+    },
+    "places_block": "naker_hotu:corrupted_grass",
+    "may_attach_to": {
+      "bottom": {
+        "name": "minecraft:polished_blackstone_bricks"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "naker_hotu:abandoned_guide_skint"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 39281139,
+      "separation": 1,
+      "spacing": 20,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "naker_hotu:abandoned_guide_skint_s",
+        "weight": 1
+      }
+    ]
+  }
+}
